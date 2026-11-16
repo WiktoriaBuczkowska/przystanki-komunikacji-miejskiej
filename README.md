@@ -9,20 +9,53 @@ Projekt zespołowy realizowany w ramach zajęć. Celem jest stworzenie bazy dany
 - udostępnienie danych przez API w Pythonie
 
 ## Zespół
+
 | Osoba | Rola |
 |---|---|
 | Julia Hinc | Dane i baza danych |
 | Wojciech Karp | Wizualizacja i analizy w QGIS |
 | Antoni Nikolajdu-Skrzypczak | API w Pythonie |
-| Wiktoria Buczkowska | Project Manager, dokumentacja i harmonogram  |
+| Wiktoria Buczkowska | Project Manager, dokumentacja i harmonogram |
 
 ## Struktura repozytorium
+
 | Folder | Zawartość |
-|---|---|
+| --- | --- |
 | `data/` | dane i baza danych |
 | `qgis/` | projekt QGIS i mapy |
 | `api/` | kod API |
+| `tests/` | testy jednostkowe API |
 | `docs/` | dokumentacja i harmonogram |
 
-## Uruchomienie
-Do uzupełnienia
+## Uruchomienie API (lokalnie)
+
+1.  Zainstaluj wymagane biblioteki:
+
+    ``` bash
+    pip install -r requirements.txt
+    ```
+
+2.  Uruchom serwer FastAPI:
+
+    ``` bash
+    uvicorn api.main:app --reload
+    ```
+
+3.  Dokumentacja interaktywna (Swagger UI) jest dostępna pod adresem:
+    `http://127.0.0.1:8000/docs`.
+
+4.  Uruchom testy jednostkowe:
+
+    ``` bash
+    pytest
+    ```
+
+## Dostępne endpointy
+
+-   `GET /` -- sprawdzenie statusu działania API
+-   `GET /stops` -- lista wszystkich przystanków w formacie GeoJSON
+    (`FeatureCollection`)
+-   `GET /stats` -- podstawowe statystyki przystanków (liczba całkowita,
+    podział na typ, obecność wiaty)
+-   `GET /stops/nearest?lat=51.1098&lon=17.0315` -- wyszukiwanie
+    najbliższego przystanku dla podanych współrzędnych
