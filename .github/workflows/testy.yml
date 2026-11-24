@@ -1,0 +1,45 @@
+name: Testy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  testy-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pobranie kodu
+        uses: actions/checkout@v4
+
+      - name: Instalacja Pythona
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalacja bibliotek
+        run: pip install -r requirements.txt
+
+      - name: Testy jednostkowe (pytest)
+        run: pytest -v
+
+  budowanie-dockera:
+    runs-on: ubuntu-latest
+    needs: testy-api
+    steps:
+      - name: Pobranie kodu
+        uses: actions/checkout@v4
+
+      - name: Budowanie i uruchomienie kontenera
+        run: docker compose up -d --build
+
+      - name: Sprawdzenie, czy API odpowiada
+        run: |
+          sleep 5
+          curl --fail http://localhost:8000/
+          curl --fail http://localhost:8000/stats
+
+      - name: Zatrzymanie kontenera
+        if: always()
+        run: docker compose down
