@@ -1,4 +1,6 @@
 # Dane i baza danych
-Osoba 1 - Julia Hinc
+**Julia Hinc** (Osoba 1)
 
-Pobranie danych o przystankach z Overpass Turbo i przygotowanie bazy danych.
+- pobranie przystanków komunikacji miejskiej Wrocławia z OpenStreetMap (Overpass Turbo)
+- utworzenie bazy SQLite/SpatiaLite `Przystanki.sqlite` (tabela `przystanki_sql`, 1864 przystanki)
+- zapis geometrii punktów i atrybutów: nazwa, numer przystanku, rodzaj (autobus/tramwaj), wiata
