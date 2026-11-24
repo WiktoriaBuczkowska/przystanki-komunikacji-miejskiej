@@ -1,4 +1,9 @@
-# Dokumentacja i zarządzanie projektem
-Osoba 4 - Wiktoria Buczkowska
+# Zarządzanie projektem i dokumentacja
+**Wiktoria Buczkowska** (Osoba 4)
 
-Zarządzanie repozytorium i harmonogramem, konteneryzacja (Docker) i dokumentacja.
+- repozytorium, struktura projektu i tablica Kanban (GitHub Projects)
+- harmonogram prac (wykres Gantta w widoku Roadmap)
+- przegląd i scalanie Pull Requestów
+- konteneryzacja API: `Dockerfile`, `docker-compose.yml`
+- testy automatyczne CI w GitHub Actions oraz testy manualne (`testy.md`)
+- dokumentacja projektu (README)
