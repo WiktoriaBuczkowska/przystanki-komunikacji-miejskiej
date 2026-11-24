@@ -1,0 +1,6 @@
+.git
+qgis
+docs
+tests
+__pycache__
+*.pyc
