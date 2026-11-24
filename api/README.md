@@ -1,4 +1,7 @@
 # API
-Osoba 3 - Antoni Nikolajdu-Skrzypczak
+**Antoni Mikołajdu-Skrzypczak** (Osoba 3)
 
-Stworzenie API w Pythonie, które korzysta z bazy przystanków.
+- REST API w Pythonie (FastAPI) odczytujące dane z bazy przystanków
+- endpointy: lista przystanków w GeoJSON (`/stops`), statystyki (`/stats`), najbliższy przystanek (`/stops/nearest`)
+- wyszukiwanie najbliższego przystanku na podstawie odległości geograficznej (wzór haversine'a)
+- testy jednostkowe w pytest (`tests/`) i dokumentacja uruchomienia API
