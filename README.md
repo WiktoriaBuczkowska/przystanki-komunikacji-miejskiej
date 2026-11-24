@@ -13,7 +13,7 @@ Projekt zespołowy realizowany w ramach zajęć. Celem jest stworzenie bazy dany
 | Osoba | Rola |
 |---|---|
 | Julia Hinc | Dane i baza danych |
-| Wojciech Karp | Wizualizacja i analizy w QGIS |
+| Wojciech Karp | Wizualizacja i analizy w ArcGIS |
 | Antoni Nikolajdu-Skrzypczak | API w Pythonie |
 | Wiktoria Buczkowska | Docker, testy|
 
@@ -22,7 +22,7 @@ Projekt zespołowy realizowany w ramach zajęć. Celem jest stworzenie bazy dany
 | Folder | Zawartość |
 | --- | --- |
 | `data/` | dane i baza danych |
-| `qgis/` | projekt QGIS i mapy |
+| `gis/` | projekt i mapy |
 | `api/` | kod API |
 | `tests/` | testy jednostkowe API |
 | `docs/` | dokumentacja i harmonogram |
