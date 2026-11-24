@@ -5,7 +5,7 @@ Projekt zespołowy realizowany w ramach zajęć. Celem jest stworzenie bazy dany
 ## Cel projektu
 - zebranie danych o przystankach z otwartych źródeł
 - utworzenie bazy danych z lokalizacjami przystanków
-- wizualizacja przystanków na mapie w QGIS/ArcGIS wraz z prostą analizą przestrzenną
+- wizualizacja przystanków na mapie w ArcGIS wraz z prostą analizą przestrzenną
 - udostępnienie danych przez API w Pythonie
 
 ## Zespół
