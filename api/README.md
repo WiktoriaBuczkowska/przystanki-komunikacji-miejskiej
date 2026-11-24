@@ -1,5 +1,5 @@
 # API
-**Antoni Mikołajdu-Skrzypczak** (Osoba 3)
+**Antoni Nikolajdu-Skrzypczak** (Osoba 3)
 
 - REST API w Pythonie (FastAPI) odczytujące dane z bazy przystanków
 - endpointy: lista przystanków w GeoJSON (`/stops`), statystyki (`/stats`), najbliższy przystanek (`/stops/nearest`)
