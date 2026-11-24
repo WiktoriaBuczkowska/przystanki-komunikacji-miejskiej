@@ -50,6 +50,19 @@ Projekt zespołowy realizowany w ramach zajęć. Celem jest stworzenie bazy dany
     pytest
     ```
 
+## Uruchomienie w Dockerze
+
+Wymagany jest zainstalowany Docker. W głównym folderze projektu:
+
+    docker compose up --build
+
+API będzie dostępne pod adresem `http://localhost:8000`, a dokumentacja (Swagger UI) pod `http://localhost:8000/docs`.
+
+## Testy automatyczne (CI)
+
+Przy każdym wrzuceniu kodu do `main` i każdym Pull Requeście GitHub Actions automatycznie uruchamia testy jednostkowe oraz buduje i sprawdza kontener Dockera (zakładka **Actions**).
+
+
 ## Dostępne endpointy
 
 -   `GET /` -- sprawdzenie statusu działania API
