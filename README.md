@@ -15,7 +15,7 @@ Projekt zespołowy realizowany w ramach zajęć. Celem jest stworzenie bazy dany
 | Julia Hinc | Dane i baza danych |
 | Wojciech Karp | Wizualizacja i analizy w QGIS |
 | Antoni Nikolajdu-Skrzypczak | API w Pythonie |
-| Wiktoria Buczkowska | Project Manager, dokumentacja i harmonogram |
+| Wiktoria Buczkowska | Docker, testy|
 
 ## Struktura repozytorium
 
